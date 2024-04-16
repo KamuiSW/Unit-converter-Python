@@ -3,13 +3,13 @@ import math
 UsableTypeSmall = ['yocto','zepto','atto','femto','pico','nano','micro','mili','centi','deci']
 UsableTypeBig = ['deka','hecto','kilo','mega','giga','tera','peta','exa','zetta','yotta']
 
-InputUnit = ''
+InputUnit = 1
 InputNumb = ''
-OrgNumb = ''
-FinalNumb = ''
+OrgNumbPublic = ''
 
 def InputNumbers():
-    InputNumb = input("input desired number: ")
+    InputNumb1 = float(input("input desired number: "))
+    InputNumb = InputNumb1
     CheckAvaible()
 
 #big numbers
@@ -34,31 +34,34 @@ def CalcToOrgBig():
         OrgNumb = InputNumb * 10^2
     elif InputUnit == 'deka':
         OrgNumb = InputNumb * 10
+    print(InputNumb)
+    OrgNumbPublic = OrgNumb
         
     CalcToFinalBig()
 
 def CalcToFinalBig():
+    
     if InputUnit == 'yotta':
-        FinalNumb = OrgNumb / 10^24
+        FinalNumb = OrgNumbPublic / 10^24
     elif InputUnit == 'zetta':
-        FinalNumb = OrgNumb / 10^21
+        FinalNumb = OrgNumbPublic / 10^21
     elif InputUnit == 'exa':
-        FinalNumb = OrgNumb / 10^18
+        FinalNumb = OrgNumbPublic / 10^18
     elif InputUnit == 'peta':
-        FinalNumb = OrgNumb / 10^15
+        FinalNumb = OrgNumbPublic / 10^15
     elif InputUnit == 'tera':
-        FinalNumb = OrgNumb / 10^12
+        FinalNumb = OrgNumbPublic / 10^12
     elif InputUnit == 'giga':
-        FinalNumb = OrgNumb / 10^9
+        FinalNumb = OrgNumbPublic / 10^9
     elif InputUnit == 'mega':
-        FinalNumb = OrgNumb / 10^6
+        FinalNumb = OrgNumbPublic / 10^6
     elif InputUnit == 'kilo':
-        FinalNumb = OrgNumb / 10^3
+        FinalNumb = OrgNumbPublic / 10^3
     elif InputUnit == 'hecto':
-        FinalNumb = OrgNumb / 10^2
+        FinalNumb = OrgNumbPublic / 10^2
     elif InputUnit == 'deka':
-        FinalNumb = OrgNumb / 10
-    print(FinalNumb)
+        FinalNumb = OrgNumbPublic / 10
+    print(OrgNumbPublic)
 
 #smaller numbers
 def CalcToOrgSmall():
