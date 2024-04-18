@@ -73,34 +73,34 @@ def CalcToOrgBig():
 
 def CalcToFinalBig():
     
-    if InputUnit == 'yotta':
+    if EndUnit == 'yotta':
         FinalNumb = OrgNumbPublic / 10**24
         print(FinalNumb)
-    elif InputUnit == 'zetta':
+    elif EndUnit == 'zetta':
         FinalNumb = OrgNumbPublic / 10**21
         print(FinalNumb)
-    elif InputUnit == 'exa':
+    elif EndUnit == 'exa':
         FinalNumb = OrgNumbPublic / 10**18
         print(FinalNumb)        
-    elif InputUnit == 'peta':
+    elif EndUnit == 'peta':
         FinalNumb = OrgNumbPublic / 10**15
         print(FinalNumb)
-    elif InputUnit == 'tera':
+    elif EndUnit == 'tera':
         FinalNumb = OrgNumbPublic / 10**12
         print(FinalNumb)
-    elif InputUnit == 'giga':
+    elif EndUnit == 'giga':
         FinalNumb = OrgNumbPublic / 10**9
         print(FinalNumb)
-    elif InputUnit == 'mega':
+    elif EndUnit == 'mega':
         FinalNumb = OrgNumbPublic / 10**6
         print(FinalNumb)
-    elif InputUnit == 'kilo':
+    elif EndUnit == 'kilo':
         FinalNumb = OrgNumbPublic / 10**3
         print(FinalNumb)
-    elif InputUnit == 'hecto':
+    elif EndUnit == 'hecto':
         FinalNumb = OrgNumbPublic / 10**2
         print(FinalNumb)
-    elif InputUnit == 'deka':
+    elif EndUnit == 'deka':
         FinalNumb = OrgNumbPublic / 10
         print(FinalNumb)
 
@@ -140,34 +140,34 @@ def CalcToOrgSmall():
     EndUnitInput()
 
 def CalcToFinalSmall():
-    if InputUnit == 'deci':
+    if EndUnit == 'deci':
         FinalNumb = OrgNumbPublic / 10**-1
         print(FinalNumb)
-    elif InputUnit == 'centi':
+    elif EndUnit == 'centi':
         FinalNumb = OrgNumbPublic / 10**-2
         print(FinalNumb)
-    elif InputUnit == 'mili':
+    elif EndUnit == 'mili':
         FinalNumb = OrgNumbPublic / 10**-3
         print(FinalNumb)
-    elif InputUnit == 'micro':
+    elif EndUnit == 'micro':
         FinalNumb = OrgNumbPublic / 10**-6
         print(FinalNumb)
-    elif InputUnit == 'nano':
+    elif EndUnit == 'nano':
         FinalNumb = OrgNumbPublic / 10**-9
         print(FinalNumb)
-    elif InputUnit == 'pico':
+    elif EndUnit == 'pico':
         FinalNumb = OrgNumbPublic / 10**-12
         print(FinalNumb)
-    elif InputUnit == 'femto':
+    elif EndUnit == 'femto':
         FinalNumb = OrgNumbPublic / 10**-15
         print(FinalNumb)
-    elif InputUnit == 'atto':
+    elif EndUnit == 'atto':
         FinalNumb = OrgNumbPublic / 10**-18
         print(FinalNumb)
-    elif InputUnit == 'zepto':
+    elif EndUnit == 'zepto':
         FinalNumb = OrgNumbPublic / 10**-21
         print(FinalNumb)
-    elif InputUnit == 'yocto':
+    elif EndUnit == 'yocto':
         FinalNumb = OrgNumbPublic / 10**-24
         print(FinalNumb)
         
